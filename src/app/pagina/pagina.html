@@ -41,23 +41,23 @@
 						</div>
 						<div class="offcanvas-body" style="background-color: #2e3032; color: #fff;">
 							<ul class="navbar-nav">
-								<li class="nav-item mb-2">
-									<a class="nav-link active" aria-current="page" href="#servicos" data-bs-dismiss="offcanvas" style="color: #fff;">{{ 'NAV.SERVICOS' | translate }}</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a class="nav-link" href="#Profissional" data-bs-dismiss="offcanvas" style="color: #fff;">{{ 'NAV.SOBRE' | translate }}</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a class="nav-link" href="#missao" data-bs-dismiss="offcanvas" style="color: #fff;">{{ 'NAV.MISSAO' | translate }}</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a class="nav-link" href="#contato-final" data-bs-dismiss="offcanvas" style="color: #fff;">{{ 'NAV.CONTATO' | translate }}</a>
-								</li>
-								<li class="nav-item mb-3">
-									<a class="btn btn-success text-white w-100" href="https://wa.me/5547999876298" target="_blank" rel="noopener" data-bs-dismiss="offcanvas">
-										<i class="bi bi-whatsapp"></i> {{ 'NAV.ORCAMENTO' | translate }}
-									</a>
-								</li>
+												<li class="nav-item mb-2">
+													<a class="nav-link active" aria-current="page" href="#servicos" style="color: #fff;" (click)="navegarPara('servicos'); $event.preventDefault();">{{ 'NAV.SERVICOS' | translate }}</a>
+												</li>
+												<li class="nav-item mb-2">
+													<a class="nav-link" href="#Profissional" style="color: #fff;" (click)="navegarPara('Profissional'); $event.preventDefault();">{{ 'NAV.SOBRE' | translate }}</a>
+												</li>
+												<li class="nav-item mb-2">
+													<a class="nav-link" href="#missao" style="color: #fff;" (click)="navegarPara('missao'); $event.preventDefault();">{{ 'NAV.MISSAO' | translate }}</a>
+												</li>
+												<li class="nav-item mb-2">
+													<a class="nav-link" href="#contato-final" style="color: #fff;" (click)="navegarPara('contato-final'); $event.preventDefault();">{{ 'NAV.CONTATO' | translate }}</a>
+												</li>
+												<li class="nav-item mb-3">
+																		<a class="btn btn-success text-white w-100" href="#" (click)="abrirWhatsapp($event)">
+																			<i class="bi bi-whatsapp"></i> {{ 'NAV.ORCAMENTO' | translate }}
+																		</a>
+												</li>
 								<li class="nav-item mb-2">
 									<div class="dropdown">
 										<button class="btn btn-outline-primary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background: #22304a; color: #fff; border-color: #a1bef2;">
