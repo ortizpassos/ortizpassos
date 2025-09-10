@@ -1,0 +1,45 @@
+{
+        "LANG": "Language",
+        "NAV": {
+        "SERVICOS": "Services",
+        "SOBRE": "About",
+        "MISSAO": "Mission",
+        "CONTATO": "Contact",
+        "ORCAMENTO": "Request a Quote"
+    },
+    "TITULO": "OrtizPassos Technical Assistance",
+    "SUBTITULO": "Maintenance of Dental Equipment",
+    "DESTAQUE": "Specialized in preventive and corrective maintenance of dental equipment.",
+    "SOLUCOES": "Fast, safe solutions with quality assurance for offices and clinics.",
+    "EQUIPAMENTOS": {
+        "TITULO": "Equipment",
+        "SERVICO1": "Repair and calibration of autoclaves",
+        "SERVICO2": "Maintenance of dental chairs",
+        "SERVICO3": "Repair of compressors and vacuum pumps",
+        "SERVICO4": "Handpiece repair (high speed, low speed, contra-angle, etc.)",
+        "SERVICO5": "Installation and inspection of equipment"
+    },
+    "ATENDIMENTO": {
+        "TITULO": "Service",
+        "SERVICO1": "Emergency service",
+        "SERVICO2": "Flexible scheduling",
+        "SERVICO3": "Qualified technical team",
+        "SERVICO4": "Original parts and warranty"
+    },
+    "PROFISSIONAL": {
+        "TITULO": "Professional Presentation",
+        "DESCRICAO": "With over 17 years of experience, I work in the maintenance of hospital, dental, and general electronic equipment, offering quality, safe, and efficient technical solutions.\n\nThroughout my career, I have developed work based on three fundamental pillars:\n\nReliability – Accurate diagnosis and high-standard maintenance;\nAgility – Fast service to prevent offices, clinics, and hospitals from being out of operation;\nGuaranteed quality – Use of original parts and procedures aligned with technical standards."
+    },
+    "MISSAO": {
+        "TITULO": "Mission",
+        "DESCRICAO1": "Provide peace of mind and safety for healthcare professionals, ensuring their equipment is always in perfect working order. Whether in preventive or corrective maintenance, I offer specialized support and personalized solutions for every need.",
+        "DESCRICAO2": "If you are looking for a technical partner committed to excellence, count on me to take care of your equipment with the seriousness and dedication your business deserves."
+    },
+    "REGIAO": "We serve the entire Vale do Itajaí region",
+    "CONTATO": {
+        "TITULO": "Contact",
+        "WHATSAPP": "(47) 99987-6298",
+        "BOTAO": "WhatsApp",
+        "EMAIL": "contato@ortizpassos.com.br"
+    }
+}

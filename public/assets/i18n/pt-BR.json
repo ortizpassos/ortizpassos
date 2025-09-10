@@ -1,0 +1,45 @@
+{
+        "LANG": "Idioma",
+        "NAV": {
+        "SERVICOS": "Serviços",
+        "SOBRE": "Sobre",
+        "MISSAO": "Missão",
+        "CONTATO": "Contato",
+        "ORCAMENTO": "Solicite um Orçamento"
+    },
+    "TITULO": "OrtizPassos Assistência Técnica",
+    "SUBTITULO": "Manutenção em Equipamentos Odontológicos",
+    "DESTAQUE": "Especializados em manutenção preventiva e corretiva de equipamentos odontológicos.",
+    "SOLUCOES": "Soluções rápidas, seguras e com garantia de qualidade para consultórios e clínicas.",
+    "EQUIPAMENTOS": {
+        "TITULO": "Equipamentos",
+        "SERVICO1": "Reparo e calibração de autoclaves",
+        "SERVICO2": "Manutenção de cadeiras odontológicas",
+        "SERVICO3": "Conserto de compressores e bombas a vácuo",
+        "SERVICO4": "Reparo em peças de mão (alta rotação, baixa rotação, contra-ângulo, etc.)",
+        "SERVICO5": "Instalação e revisão de equipamentos"
+    },
+    "ATENDIMENTO": {
+        "TITULO": "Atendimento",
+        "SERVICO1": "Atendimento emergencial",
+        "SERVICO2": "Agendamento flexível",
+        "SERVICO3": "Equipe técnica qualificada",
+        "SERVICO4": "Peças originais e garantia"
+    },
+    "PROFISSIONAL": {
+        "TITULO": "Apresentação Profissional",
+        "DESCRICAO": "Com mais de 17 anos de experiência, atuo na área de manutenção de equipamentos hospitalares, odontológicos e eletrônicos em geral, oferecendo soluções técnicas de qualidade, seguras e eficientes.\n\nAo longo da minha trajetória, desenvolvi um trabalho baseado em três pilares fundamentais:\n\nConfiabilidade – Diagnóstico preciso e manutenção de alto padrão;\nAgilidade – Atendimento rápido para evitar que consultórios, clínicas e hospitais fiquem parados;\nQualidade garantida – Utilização de peças originais e procedimentos alinhados às normas técnicas."
+    },
+    "MISSAO": {
+        "TITULO": "Missão",
+        "DESCRICAO1": "proporcionar tranquilidade e segurança para profissionais da saúde, garantindo que seus equipamentos estejam sempre em perfeito funcionamento. Seja em manutenções preventivas ou corretivas, ofereço suporte especializado e soluções personalizadas para cada necessidade.",
+        "DESCRICAO2": "Se você busca um parceiro técnico comprometido com excelência, conte comigo para cuidar dos seus equipamentos com a seriedade e dedicação que o seu negócio merece."
+    },
+    "REGIAO": "Atendemos toda a região do Vale do Itajaí",
+    "CONTATO": {
+        "TITULO": "Contato",
+        "WHATSAPP": "(47) 99987-6298",
+        "BOTAO": "WhatsApp",
+        "EMAIL": "contato@ortizpassos.com.br"
+    }
+}

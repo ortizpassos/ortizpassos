@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Responsividade global para mobile */
+@media (max-width: 767px) {
+	html, body {
+		font-size: 15px;
+		overflow-x: hidden;
+	}
+	.container, .container-fluid {
+		padding-left: 0.5rem !important;
+		padding-right: 0.5rem !important;
+	}
+	.row {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	img, svg {
+		max-width: 100%;
+		height: auto;
+	}
+	.card {
+		margin-bottom: 1rem;
+	}
+	.display-3, .display-4 {
+		font-size: 2rem !important;
+	}
+	h1, .h1 {
+		font-size: 1.5rem !important;
+	}
+	h2, .h2 {
+		font-size: 1.2rem !important;
+	}
+	h3, .h3 {
+		font-size: 1.1rem !important;
+	}
+	.navbar {
+		padding: 0.5rem 0.5rem !important;
+	}
+	.navbar-brand img {
+		width: 32px !important;
+		height: 32px !important;
+	}
+	.pagina-contato {
+		padding: 1rem 0.5rem !important;
+		font-size: 1rem;
+	}
+	.list-group-item {
+		font-size: 0.98rem;
+	}
+}
