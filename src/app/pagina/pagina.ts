@@ -28,14 +28,19 @@ export class Pagina {
   // Função para navegação suave e fechar o menu lateral
   navegarPara(id: string) {
     this.fecharMenuLateral();
-    setTimeout(() => {
+    let tentativas = 0;
+    const scrollToTarget = () => {
       const target = document.getElementById(id);
       if (target) {
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else if (tentativas < 10) {
+        tentativas++;
+        setTimeout(scrollToTarget, 100);
       } else {
         window.location.hash = '#' + id;
       }
-    }, 250);
+    };
+    setTimeout(scrollToTarget, 300);
   }
 
   fecharMenuLateral() {
