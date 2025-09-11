@@ -1,10 +1,11 @@
 
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-pagina',
-  imports: [TranslateModule],
+  imports: [TranslateModule, RouterLink],
   templateUrl: './pagina.html',
   styleUrl: './pagina.css'
 })

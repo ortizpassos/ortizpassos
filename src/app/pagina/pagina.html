@@ -8,6 +8,7 @@
 					<a class="navbar-brand d-flex align-items-center" href="#">						
 						OrtizPassos
 					</a>
+					
 		<button class="navbar-toggler bg-white border border-2 border-primary shadow-sm d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Abrir menu lateral" style="background-color:#fff !important; border-color:#a1bef2 !important;">
 			<span class="navbar-toggler-icon" style="filter: brightness(0.3);"></span>
 		</button>
@@ -24,6 +25,16 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#contato-final">{{ 'NAV.CONTATO' | translate }}</a>
+					</li>
+					<!-- Desktop language selector -->
+					<li class="nav-item dropdown ms-lg-2 mt-2 mt-lg-0">
+						<button class="btn btn-outline-primary dropdown-toggle px-3 py-1" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background: #22304a; color: #fff; border-color: #a1bef2;">
+							🌐 {{ 'LANG' | translate }}
+						</button>
+						<ul class="dropdown-menu dropdown-menu-end" style="background: #22304a; color: #fff;">
+							<li><a class="dropdown-item" href="#" (click)="alterarIdioma('pt-BR'); $event.preventDefault();" style="color: #fff;">Português</a></li>
+							<li><a class="dropdown-item" href="#" (click)="alterarIdioma('en-US'); $event.preventDefault();" style="color: #fff;">English</a></li>
+						</ul>
 					</li>
 					<li class="nav-item ms-lg-2 mt-2 mt-lg-0">
 						<a class="btn btn-success text-white px-3 py-1" href="https://wa.me/5547999876298?text=Olá, gostaria de solicitar um orçamento ou serviço!" target="_blank" rel="noopener">
@@ -64,8 +75,8 @@
 											🌐 {{ 'LANG' | translate }}
 										</button>
 										<ul class="dropdown-menu w-100" style="background: #22304a; color: #fff;">
-											<li><a class="dropdown-item" href="#" (click)="alterarIdioma('pt-BR')" style="color: #fff;">Português</a></li>
-											<li><a class="dropdown-item" href="#" (click)="alterarIdioma('en-US')" style="color: #fff;">English</a></li>
+											<li><a class="dropdown-item" href="#" (click)="alterarIdioma('pt-BR'); fecharMenuLateral(); $event.preventDefault();" style="color: #fff;">Português</a></li>
+											<li><a class="dropdown-item" href="#" (click)="alterarIdioma('en-US'); fecharMenuLateral(); $event.preventDefault();" style="color: #fff;">English</a></li>
 											
 										</ul>
 									</div>
@@ -95,23 +106,23 @@
 				<div class="card h-100 border-primary">
 					<div class="card-header bg-primary text-white fw-semibold">Equipamentos</div>
 					<ol class="list-group list-group-numbered list-group-flush">
-						<li class="list-group-item">{{ 'EQUIPAMENTOS.SERVICO1' | translate }}</li>
-						<li class="list-group-item">{{ 'EQUIPAMENTOS.SERVICO2' | translate }}</li>
-						<li class="list-group-item">{{ 'EQUIPAMENTOS.SERVICO3' | translate }}</li>
-						<li class="list-group-item">{{ 'EQUIPAMENTOS.SERVICO4' | translate }}</li>
-						<li class="list-group-item">{{ 'EQUIPAMENTOS.SERVICO5' | translate }}</li>
-								</ol>
+						<li class="list-group-item"><a routerLink="/servico/autoclaves" class="text-decoration-none">{{ 'EQUIPAMENTOS.SERVICO1' | translate }}</a></li>
+						<li class="list-group-item"><a routerLink="/servico/cadeiras-odontologicas" class="text-decoration-none">{{ 'EQUIPAMENTOS.SERVICO2' | translate }}</a></li>
+						<li class="list-group-item"><a routerLink="/servico/compressores-e-bombas-vacuo" class="text-decoration-none">{{ 'EQUIPAMENTOS.SERVICO3' | translate }}</a></li>
+						<li class="list-group-item"><a routerLink="/servico/pecas-de-mao" class="text-decoration-none">{{ 'EQUIPAMENTOS.SERVICO4' | translate }}</a></li>
+						<li class="list-group-item"><a routerLink="/servico/instalacao-e-revisao" class="text-decoration-none">{{ 'EQUIPAMENTOS.SERVICO5' | translate }}</a></li>
+					</ol>
 				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="card h-100 border-success">
 					<div class="card-header bg-success text-white fw-semibold">Atendimento</div>
 					<ol class="list-group list-group-numbered list-group-flush">
-						<li class="list-group-item">{{ 'ATENDIMENTO.SERVICO1' | translate }}</li>
-						<li class="list-group-item">{{ 'ATENDIMENTO.SERVICO2' | translate }}</li>
-						<li class="list-group-item">{{ 'ATENDIMENTO.SERVICO3' | translate }}</li>
-						<li class="list-group-item">{{ 'ATENDIMENTO.SERVICO4' | translate }}</li>
-								</ol>
+						<li class="list-group-item"><a routerLink="/servico/atendimento-emergencial" class="text-decoration-none">{{ 'ATENDIMENTO.SERVICO1' | translate }}</a></li>
+						<li class="list-group-item"><a routerLink="/servico/agendamento-flexivel" class="text-decoration-none">{{ 'ATENDIMENTO.SERVICO2' | translate }}</a></li>
+						<li class="list-group-item"><a routerLink="/servico/equipe-tecnica-qualificada" class="text-decoration-none">{{ 'ATENDIMENTO.SERVICO3' | translate }}</a></li>
+						<li class="list-group-item"><a routerLink="/servico/pecas-originais-e-garantia" class="text-decoration-none">{{ 'ATENDIMENTO.SERVICO4' | translate }}</a></li>
+					</ol>
 				</div>
 			</div>
 		</div>
