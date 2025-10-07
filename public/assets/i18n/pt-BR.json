@@ -16,8 +16,8 @@
         "SERVICO1": "Reparo e calibração de autoclaves",
         "SERVICO2": "Manutenção de cadeiras odontológicas",
         "SERVICO3": "Conserto de compressores e bombas a vácuo",
-        "SERVICO4": "Reparo em peças de mão (alta rotação, baixa rotação, contra-ângulo, etc.)",
-        "SERVICO5": "Instalação e revisão de equipamentos"
+        "SERVICO4": "Instalação e revisão de equipamentos",
+        "SERVICO5": "Reparo em peças de mão (alta rotação, baixa rotação, contra-ângulo, etc.)"
     },
     "ATENDIMENTO": {
         "TITULO": "Atendimento",

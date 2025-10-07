@@ -1,120 +1,27 @@
-/* Garante cursor pointer para todos os itens do dropdown de idioma */
-.dropdown-menu .dropdown-item {
-	cursor: pointer !important;
-}
-@media (max-width: 767px) {
-	.pagina-servicos.container,
-	.container.my-4,
-	.container.my-5 {
-		padding-left: 0.5rem !important;
-		padding-right: 0.5rem !important;
-	}
-	.card {
-		padding: 1rem !important;
-	}
-	.pagina-header h1 {
-		font-size: 1.5rem;
-	}
-	.pagina-header h2 {
-		font-size: 1rem;
-	}
-	.pagina-contato {
-		max-width: 100% !important;
-		font-size: 0.98rem;
-	}
-	.navbar-brand img {
-		width: 28px !important;
-		height: 28px !important;
-	}
-	.display-4 {
-		font-size: 2rem;
-	}
-	.h5 {
-		font-size: 1.1rem;
-	}
-}
-/* Sobreposição de cor no fundo - mais sutil e profissional */
-.background-overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background: rgba(30, 42, 61, 0.55); /* azul escuro translúcido */
-	z-index: 0;
-	pointer-events: none;
-}
-
-body > *:not(.background-overlay) {
-	position: relative;
-}
-body {
-	background-image: url('/assets/fundo.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-color: #f4f6fa; /* cinza muito claro */
-	color: #222b45;
-	font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-}
-
-/* Navbar mais sóbria e elegante */
-/* Navbar aprimorado: azul escuro, textos brancos, botão com destaque */
-.navbar-custom {
-	background-color: #2e3032 !important;
-	box-shadow: 0 2px 8px rgba(34, 48, 74, 0.10);
-}
-.navbar-custom .navbar-brand,
-.navbar-custom .nav-link,
-.navbar-custom .navbar-toggler {
-	color: #fff !important;
-	font-weight: 500;
-	letter-spacing: 0.5px;
-	transition: color 0.2s;
-}
-.navbar-custom .nav-link:hover,
-.navbar-custom .navbar-brand:hover {
-	color: #a1bef2 !important;
-}
-.navbar-custom .nav-link.btn {
-	color: #22304a !important;
-	background: #fff;
-	border-radius: 4px;
-	padding: 0.25rem 1rem;
-	margin-left: 0.5rem;
-	font-weight: 600;
-	transition: background 0.2s, color 0.2s;
-	box-shadow: 0 1px 4px rgba(34, 48, 74, 0.07);
-}
-.navbar-custom .nav-link.btn:hover {
-	background: #a1bef2;
-	color: #22304a !important;
-}
-/* Efeito hover para itens de serviço - mais sutil */
-.list-group-item:hover {
-	background-color: #e0e6ed;
-	color: #22304a;
-	cursor: pointer;
-	transition: background 0.2s, color 0.2s;
-}
-/* Estilos customizados mínimos para complementar o Bootstrap */
-/* Títulos mais elegantes */
-.pagina-header h1 {
-	letter-spacing: 1px;
-	color: #22304a;
-	font-weight: 700;
-}
-.pagina-header h2 {
-	color: #3b4a67;
-	font-weight: 500;
-}
-/* Contato centralizado e mais limpo */
-.pagina-contato {
-	text-align: center;
-	background: #fff;
-	border-radius: 8px;
-	box-shadow: 0 2px 8px rgba(34, 48, 74, 0.06);
-	padding: 2rem 1rem;
-	margin-top: 2rem;
-}
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .navbar {
+      background-color: #004aad;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+    .hero {
+      background: linear-gradient(135deg, #004aad, #007bff);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .service-icon {
+      font-size: 3rem;
+      color: #004aad;
+    }
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }

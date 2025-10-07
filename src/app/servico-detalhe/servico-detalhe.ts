@@ -1,18 +1,17 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-servico-detalhe',
-  imports: [CommonModule, RouterLink, TranslateModule, NgOptimizedImage],
+  imports: [CommonModule, RouterLink, NgOptimizedImage],
   template: `
     <div class="container py-4" style="max-width: 900px;">
       <a routerLink="/" class="btn btn-link px-0 mb-3">← Voltar</a>
       <div class="card shadow-sm">
         <div class="card-body">
           <h1 class="h3 fw-bold mb-3">{{ titulo() }}</h1>
-          <p class="text-muted mb-0">{{ 'DESTAQUE' | translate }}</p>
+          <p class="text-muted mb-0">Destaque do serviço</p>
         </div>
       </div>
       @if (imageSrc()) {
@@ -32,22 +31,21 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class ServicoDetalheComponent {
   private route = inject(ActivatedRoute);
-  protected translate = inject(TranslateService);
 
   slug = computed(() => this.route.snapshot.paramMap.get('slug') ?? '');
 
   titulo = computed(() => {
     const s = this.slug();
     const map: Record<string, string> = {
-      'autoclaves': this.translate.instant('EQUIPAMENTOS.SERVICO1'),
-      'cadeiras-odontologicas': this.translate.instant('EQUIPAMENTOS.SERVICO2'),
-      'compressores-e-bombas-vacuo': this.translate.instant('EQUIPAMENTOS.SERVICO3'),
-      'pecas-de-mao': this.translate.instant('EQUIPAMENTOS.SERVICO4'),
-      'instalacao-e-revisao': this.translate.instant('EQUIPAMENTOS.SERVICO5'),
-      'atendimento-emergencial': this.translate.instant('ATENDIMENTO.SERVICO1'),
-      'agendamento-flexivel': this.translate.instant('ATENDIMENTO.SERVICO2'),
-      'equipe-tecnica-qualificada': this.translate.instant('ATENDIMENTO.SERVICO3'),
-      'pecas-originais-e-garantia': this.translate.instant('ATENDIMENTO.SERVICO4'),
+      'autoclaves': 'Autoclaves',
+      'cadeiras-odontologicas': 'Cadeiras Odontológicas',
+      'compressores-e-bombas-vacuo': 'Compressores e Bombas de Vácuo',
+      'pecas-de-mao': 'Peças de Mão',
+      'instalacao-e-revisao': 'Instalação e Revisão',
+      'atendimento-emergencial': 'Atendimento Emergencial',
+      'agendamento-flexivel': 'Agendamento Flexível',
+      'equipe-tecnica-qualificada': 'Equipe Técnica Qualificada',
+      'pecas-originais-e-garantia': 'Peças Originais e Garantia',
     };
     return map[s] ?? s;
   });

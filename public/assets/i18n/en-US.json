@@ -16,8 +16,8 @@
         "SERVICO1": "Repair and calibration of autoclaves",
         "SERVICO2": "Maintenance of dental chairs",
         "SERVICO3": "Repair of compressors and vacuum pumps",
-        "SERVICO4": "Handpiece repair (high speed, low speed, contra-angle, etc.)",
-        "SERVICO5": "Installation and inspection of equipment"
+        "SERVICO4": "Installation and inspection of equipment",
+        "SERVICO5": "Handpiece repair (high speed, low speed, contra-angle, etc.)"
     },
     "ATENDIMENTO": {
         "TITULO": "Service",
