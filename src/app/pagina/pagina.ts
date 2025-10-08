@@ -37,12 +37,15 @@ export class Pagina {
     }
   }
 
-  abrirWhatsapp(event: Event) {
+
+  enviarWhatsapp(event: Event) {
     event.preventDefault();
-    this.fecharMenuLateral();
-    setTimeout(() => {
-      window.open('https://wa.me/5547999876298', '_blank', 'noopener');
-    }, 250);
+    const form = event.target as HTMLFormElement;
+    const mensagemInput = form.querySelector<HTMLTextAreaElement>('#mensagem');
+    const mensagem = mensagemInput?.value.trim() || '';
+    const numero = '5547999876298';
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank', 'noopener');
   }
 
 }

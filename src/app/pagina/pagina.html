@@ -79,7 +79,7 @@
     <h2 class="fw-bold text-center mb-4">Fale Conosco</h2>
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <form>
+  <form (submit)="enviarWhatsapp($event)">
           <div class="mb-3">
             <label for="nome" class="form-label">Nome</label>
             <input type="text" class="form-control" id="nome" placeholder="Seu nome" />
